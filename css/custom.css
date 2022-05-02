@@ -1,0 +1,36 @@
+body {
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  font-family: "Courier New", Courier, monospace;
+}
+.container {
+  max-width: 640px;
+}
+.categoryContainer {
+  max-height: 340px;
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+@keyframes append-animate {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.new-box {
+  animation: append-animate 0.3s linear;
+}
+
+.check-img {
+  width: 50px;
+}
+
+.title {
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
